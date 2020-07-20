@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--<base href="/"> -->
+        {% include "partials/head/favicon.html" %}
+
+        {% include "partials/head/metadata.html" %}
+
+        {% include "partials/head/styles.html" %}
+
+
+    </head>
+
+    <body>
+        {% include "partials/header/site-header.html" %}
+        
+        <!-- Page Contents -->
+        <div class="pusher">
+            <div class="ui mob-menu  vertical center aligned segment">
+                <div class="ui container">
+                <div class="mob-menu__logo">
+                        <a href="/"><img src="/logo/logo.png" alt="" /></a>
+                    </div>
+                    <div class="ui large secondary btn-open pointing menu">
+                        <a class="toc item">
+                            <i class="sidebar icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+   
+        {%  block main %}
+            
+            {{content | safe}}
+            
+        {% endblock %}
+
+  
+        {%  block footer %}
+        
+        {% include "partials/footer/site-footer.html" %}
+        
+        {% endblock %}
+        
+        {% include "partials/footer/scripts.html" %}
+
+        </div>
+    </body>
+
+</html>
