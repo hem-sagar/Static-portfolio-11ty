@@ -1,3 +1,8 @@
+module.exports = {
+    dir: {
+        output: "docs"
+    }
+};
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "static/css": "css" });
     eleventyConfig.addPassthroughCopy({ "static/fonts": "fonts" });
