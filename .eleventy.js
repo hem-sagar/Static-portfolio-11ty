@@ -1,6 +1,6 @@
 module.exports = {
     dir: {
-        output: "public"
+        output: "docs"
     }
 };
 module.exports = function(eleventyConfig) {
